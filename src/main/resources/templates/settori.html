@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+<div class="d-flex">
+  <!-- Contenuto principale -->
+  <div class="flex-grow-1 d-flex flex-column">
+    <!-- Navbar -->
+    <div th:replace="fragments/navbar :: navbar"></div>
+
+    <!-- Zona del contenuto -->
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 px-2 py-5 display-2 mx-auto">Settori</div>
+        <div class="col-4"></div>
+      </div>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-8 border-end px-2 py-5 d-flex flex-wrap">
+          <!-- Le tue card -->
+          <div class="card mx-3 my-2" style="width:350px">
+            <img class="card-img-top" th:src="@{/img/atletica.jpg}" alt="Atletica">
+            <div class="card-body">
+              <h2 class="card-title">Atletica</h2>
+              <button type="button" class="btn btn-primary px-5 py-3">Scopri di più</button>
+            </div>
+          </div>
+          <div class="card mx-3 my-2" style="width:350px">
+            <img class="card-img-top" th:src="@{/img/atletica.jpg}" alt="Atletica">
+            <div class="card-body">
+              <h2 class="card-title">Atletica</h2>
+              <button type="button" class="btn btn-primary px-5 py-3">Scopri di più</button>
+            </div>
+          </div>
+          <div class="card mx-3 my-2" style="width:350px">
+            <img class="card-img-top" th:src="@{/img/atletica.jpg}" alt="Atletica">
+            <div class="card-body">
+              <h2 class="card-title">Atletica</h2>
+              <button type="button" class="btn btn-primary px-5 py-3">Scopri di più</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar al posto del div contatti -->
+        <div class="col-3">
+          <div th:replace="fragments/sidebar :: sidebar"></div>
+        </div>
+      </div>
+
+      <!-- Ripeti per altre righe se vuoi -->
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-8 border-end px-2 py-5 d-flex flex-wrap">
+          <div class="card mx-3 my-2" style="width:350px">
+            <img class="card-img-top" th:src="@{/img/atletica.jpg}" alt="Atletica">
+            <div class="card-body">
+              <h2 class="card-title">Atletica</h2>
+              <button type="button" class="btn btn-primary px-5 py-3">Scopri di più</button>
+            </div>
+          </div>
+          <div class="card mx-3 my-2" style="width:350px">
+            <img class="card-img-top" th:src="@{/img/atletica.jpg}" alt="Atletica">
+            <div class="card-body">
+              <h2 class="card-title">Atletica</h2>
+              <button type="button" class="btn btn-primary px-5 py-3">Scopri di più</button>
+            </div>
+          </div>
+          <div class="card mx-3 my-2" style="width:350px">
+            <img class="card-img-top" th:src="@{/img/atletica.jpg}" alt="Atletica">
+            <div class="card-body">
+              <h2 class="card-title">Atletica</h2>
+              <button type="button" class="btn btn-primary px-5 py-3">Scopri di più</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div th:replace="fragments/sidebar :: sidebar"></div>
+        </div>
+      </div>
+
+      <!-- Aggiungi altre righe se servono -->
+    </div>
+
+    <!-- Footer -->
+    <div th:replace="fragments/footer :: footer"></div>
+  </div>
+</div>
+
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
